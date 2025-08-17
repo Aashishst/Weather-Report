@@ -56,7 +56,7 @@ A few tips to follow --
 
 ***Maps(CSS)*** - https://unpkg.com/leaflet/dist/leaflet.css
 
-## *The Leaflet Links are - *
+## *The Leaflet Links are* -
 
 ***Links*** - https://unpkg.com/leaflet/dist/leaflet.css + https://unpkg.com/leaflet/dist/leaflet.js & https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js
 
