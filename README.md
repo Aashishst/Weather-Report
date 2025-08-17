@@ -54,11 +54,11 @@ A few tips to follow --
 
 ***Graphs(CSS)*** - [Graphs.css](https://github.com/user-attachments/files/21820701/Graphs.css)
 
-***Maps(CSS)*** - ["https://unpkg.com/leaflet/dist/leaflet.css"] 
+***Maps(CSS)*** - "https://unpkg.com/leaflet/dist/leaflet.css"
 
 ## *The Leaflet Links are - *
 
-***Links*** - ["https://unpkg.com/leaflet/dist/leaflet.css"] + ["https://unpkg.com/leaflet/dist/leaflet.js"] & ["https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"]
+***Links*** - "https://unpkg.com/leaflet/dist/leaflet.css" + "https://unpkg.com/leaflet/dist/leaflet.js" & "https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"
 
 ## Devloper Info
 
