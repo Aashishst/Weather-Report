@@ -63,5 +63,3 @@ A few tips to follow --
 ## Devloper Info
 
 ***Developer:*** - This website was made by Me - **Aashish K** for the under 18 hacathon by **Hack Club + Github**.
-
-***Addons*** - You can also make the JS and html add a couple of extra Maps or any other features you Like.
