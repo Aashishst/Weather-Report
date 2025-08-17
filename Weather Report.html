@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Weather Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+HU:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Weather.css" />
+    <script src="Weather.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/suncalc@1.9.0/suncalc.js"></script>
+</head>
+<body>
+    <!-- Right-side dropdown menu for weather facts -->
+    <div id="facts-menu">
+        <h3 style="text-align:center; margin:8px 0 0 0; font-family:'Exo',sans-serif; color:#ffffff; font-size:1.2em;">July Facts</h3>
+        <ul>
+            <li class="fact-keyword" data-fact="Longest Day">Longest Day</li>
+            <li class="fact-keyword" data-fact="Shortest Day">Shortest Day</li>
+            <li class="fact-keyword" data-fact="Highest Rainfall">Highest Rainfall</li>
+            <li class="fact-keyword" data-fact="Lowest Temp">Lowest Temp</li>
+            <li class="fact-keyword" data-fact="Strongest Winds">Strongest Winds</li>
+            <li class="fact-keyword" data-fact="Best AQI">Best AQI</li>
+            <li class="fact-keyword" data-fact="Hottest Day">Hottest Day</li>
+            <li class="fact-keyword" data-fact="Coldest Night">Coldest Night</li>
+            <li class="fact-keyword" data-fact="Longest Rain">Longest Rain</li>
+        </ul>
+        <div id="fact-dropdown" class="hidden"></div>
+    </div>
+
+    <header>
+        <h1>Chichu's Weather Report</h1>
+        <nav>
+            <div id="search-tab">
+                <input type="text" id="search-box" placeholder="States...">
+                <button id="search-button">Search</button>
+                <div id="search-options">
+                    <p id="S1">Andhra Pradesh</p>
+                    <p id="S2">Arunachal Pradesh</p>
+                    <p id="S3">Assam</p>
+                    <p id="S4">Bihar</p>
+                    <p id="S5">Chhattisgarh</p>
+                    <p id="S6">Goa</p>
+                    <p id="S7">Gujarat</p>
+                    <p id="S8">Haryana</p>
+                    <p id="S9">Himachal Pradesh</p>
+                    <p id="S10">Jharkhand</p>
+                    <p id="S11">Karnataka</p>
+                    <p id="S12">Kerala</p>
+                    <p id="S13">Madhya Pradesh</p>
+                    <p id="S14">Maharashtra</p>
+                    <p id="S15">Manipur</p>
+                    <p id="S16">Meghalaya</p>
+                    <p id="S17">Mizoram</p>
+                    <p id="S18">Nagaland</p>
+                    <p id="S19">Odisha</p>
+                    <p id="S20">Punjab</p>
+                    <p id="S21">Rajasthan</p>
+                    <p id="S22">Sikkim</p>
+                    <p id="S23">Tamil Nadu</p>
+                    <p id="S24">Telangana</p>
+                    <p id="S25">Tripura</p>
+                    <p id="S26">Uttar Pradesh</p>
+                    <p id="S27">Uttarakhand</p>
+                    <p id="S28">West Bengal</p>
+                    <p id="S29">Hyderabad</p>
+                </div>
+            </div>
+            <a id="a" href="About/About.html">About</a>
+            <a id="a" href="#">Advanced</a>
+            <a id="a" href="Weather-Graphs/Graphs.html" target="_self">Statistics</a>
+        </nav>
+    </header>
+
+    <main id="weather">
+        <section id="weather-info">
+            <h2>Current Weather</h2>
+            <div id="weather-details">
+                <div id="D1">
+                    <p id="current-temp">Temperature: --°C</p>
+                    <p id="current-humidity">Humidity: --%</p>
+                </div>
+                <div id="D2">
+                    <p id="current-wind">Wind Speed: -- km/h</p>
+                    <p id="current-condition">Condition: --</p>
+                </div>
+                <img id="current-icon" src="" alt="Current Weather Icon" style="display:none;" height="70">
+            </div>
+        </section>
+    </main>
+
+    <main id="sun-rise-set">
+        <section id="weather-info-1">
+            <div id="weather-details-1">
+                <div id="D3">
+                    <h2>Sunrise</h2>
+                    <p id="sunrise-time">Timing: --am</p>
+                    <p id="sunrise-direction">Direction: --</p>
+                </div>
+
+                <div id="D4">
+                    <h2>Sunset</h2>
+                    <p id="sunset-time">Timing: --pm</p>
+                    <p id="sunset-direction">Direction: --</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="future-weather">
+        <section id="weather-info-2">
+            <h2>Tomorrow's Weather</h2>
+            <div id="weather-details-2">
+                <div id="D5">
+                    <p id="tomorrow-temp">Temperature: --°C</p>
+                    <p id="tomorrow-humidity">Humidity: --%</p>
+                </div>
+                <div id="D6">
+                    <p id="tomorrow-wind">Wind Speed: -- km/h</p>
+                    <p id="tomorrow-condition">Condition: --</p>
+                </div>
+                <img id="tomorrow-icon" src="" alt="Tomorrow Weather Icon" style="display:none;" height="70">
+            </div>
+        </section>
+    </main>
+
+    <main id="yesterdays-weather">
+        <section id="weather-info-3">
+            <h2>Yesterday's Weather</h2>
+            <div id="weather-details-3">
+                <div id="D7">
+                    <p id="yesterday-temp">Temperature: --°C</p>
+                    <p id="yesterday-humidity">Humidity: --%</p>
+                </div>
+                <div id="D8">
+                    <p id="yesterday-wind">Wind Speed: -- km/h</p>
+                    <p id="yesterday-condition">Condition: --</p>
+                </div>
+                <img id="yesterday-icon" src="" alt="Yesterday Weather Icon" style="display:none;" height="70">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contact">
+            <p>© 2025 Chichu's Weather Report. All rights reserved |</p>
+            <p>Contact: 7780587200 | Email: aashish.kamisetty@gmail.com | </p>
+        </div>
+        <div id="Credits">
+            <p id="C1">Icons by: <a id="aa" href="https://fonts.google.com/icons" target="_blank" rel="noopener">Google Fonts</a> | </p>
+            <p id="bg">Background by: <a id="ab" href="https://www.eggradients.com/gradient-colors" target="_blank" rel="noopener">Eggradients</a></p>
+        </div>
+        <div id="git">
+            <p id="B1">Find Me on </p>
+            <a id="aa" href="https://Github.com" target="_blank">
+                <img id="git" src="../../../Downloads/GitHub-Logos/GitHub_Logo_White.png" height="25px">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

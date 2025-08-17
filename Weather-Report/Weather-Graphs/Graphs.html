@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Weather Statistics</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+HU:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Graphs.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="Graphs.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <header>
+            <a href = "../../Weather Report.html" style="text-decoration: none;"><h1>Indian Weather Report</h1></a>
+            <nav>
+                <a id = "a" href="../../Weather Report.html">Home</a>
+                <a id = "a" href="#">Advanced</a>
+                <a id = "a" href="../About/About.html">About</a>
+            </nav>
+            <div id="search-tab">
+                <input type="text" id="search-box" placeholder="States...">
+                <button id="search-button">Cities</button>
+                <div id="search-options">
+                    <p id="S1">Andhra Pradesh</p>
+                    <p id="S2">Arunachal Pradesh</p>
+                    <p id="S3">Assam</p>
+                    <p id="S4">Bihar</p>
+                    <p id="S5">Chhattisgarh</p>
+                    <p id="S6">Goa</p>
+                    <p id="S7">Gujarat</p>
+                    <p id="S8">Haryana</p>
+                    <p id="S9">Himachal Pradesh</p>
+                    <p id="S10">Jharkhand</p>
+                    <p id="S11">Karnataka</p>
+                    <p id="S12">Kerala</p>
+                    <p id="S13">Ladakh</p>
+                    <p id="S14">Madhya Pradesh</p>
+                    <p id="S15">Maharashtra</p>
+                    <p id="S16">Manipur</p>
+                    <p id="S17">Meghalaya</p>
+                    <p id="S18">Mizoram</p>
+                    <p id="S19">Nagaland</p>
+                    <p id="S20">Odisha</p>
+                    <p id="S21">Punjab</p>
+                    <p id="S22">Rajasthan</p>
+                    <p id="S23">Sikkim</p>
+                    <p id="S24">Tamil Nadu</p>
+                    <p id="S25">Telangana</p>
+                    <p id="S26">Tripura</p>
+                    <p id="S27">Uttar Pradesh</p>
+                    <p id="S28">Uttarakhand</p>
+                    <p id="S29">West Bengal</p>
+                    <p id="S30">Andaman and Nicobar Islands</p>
+                    <p id="S31">Chandigarh</p>
+                    <p id="S32">Dadra and Nagar Haveli and Daman and Diu</p>
+                    <p id="S33">Delhi</p>
+                    <p id="S34">Jammu and Kashmir</p>
+                    <p id="S35">Lakshadweep</p>
+                    <p id="S36">Puducherry</p>
+
+                </div>
+        </header>
+        <div class="container">
+            <canvas id="myWeatherChart" width="200" height="40"></canvas>
+        </div>
+        <div id = "divider"></div>
+        <div class = "AQI">
+            <h2 id = "AQI">AQI - Air Quality Index</h2>
+            <div class = "A">
+                <p id = "A-1">AQI: -- </p>
+                <p id = "City">City: --</p>
+            </div>
+            <div class = "L">
+                <p id = "State">State: --</p>
+                <p id = "Condition">Condition: --</p>
+            </div>
+        <div id="map"></div>
+        <script src="Maps.js"></script>
+        </div>
+    </body>
+</html>

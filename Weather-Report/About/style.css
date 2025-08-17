@@ -1,0 +1,166 @@
+body{
+    border: 0;
+    margin: 0;
+    background-image: url("https://cdn.prod.website-files.com/6768f29a6d5da42209173f20/6768f29b6d5da422091773c0_light-blue-backgrounds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    min-height: max-content;
+}
+
+header{
+    background: rgba(63, 170, 232, 0.694);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    left: 550px;
+}
+
+a#a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1{
+    color: white;
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin: 0%;
+    font-family: 'Great Vibes', cursive;
+}
+
+main{
+    display: inline-flex;
+}
+
+section{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+    position: relative;
+    left: 20px;
+    top: 30px;
+
+}
+
+#S1{
+    position: relative;
+    left: 50px;
+}
+
+#S2{
+    position: relative;
+    left: 250px;
+}
+
+#S3{
+    position: relative;
+    top: 300px;
+    left: -830px;
+}
+
+#S4{
+    position: relative;
+    top: 300px;
+    left: -630px;
+}
+
+h2{
+    font-family: 'Exo', sans-serif;
+    color:rgb(42, 156, 208);
+}
+
+p, ul{
+    list-style-image: url("../../../../../Downloads/radio_button_checked_16dp_3C4567_FILL0_wght400_GRAD0_opsz20.png");
+    font-family: 'Exo', sans-serif;
+    width: 400px;
+    text-align: justify;
+}
+
+li{
+    height: 50px;
+}
+
+footer{
+    background: rgba(63, 170, 232, 0.694);
+    margin-top: 150px;
+    padding-bottom: 15px;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 270px;
+    height: 80px;
+}
+
+#contact{
+    position: relative;
+    left: 220px;
+}
+
+#git{
+    display: flex;
+    position: relative;
+    left: -10px;
+}
+
+img#git{
+    position: relative;
+    top: 13px;
+    left: -35px;
+}
+#C1 {
+    position: relative;
+    left: 220px
+}
+
+#B1 {
+    position: relative;
+    left: 6px;
+}
+
+#ac{
+    position: relative;
+    left: -276px
+}
+
+#aa, #ab, #ac{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#p1{
+    position: relative;
+    left: 20px;
+}
+
+#p3{
+    position: relative;
+    left: 66px;
+    top: -37px;
+}
+
+#bg{
+    position: relative;
+    left: 283px;
+}
+
+#bg a {
+    pointer-events: auto;
+    z-index: 10;
+    position: relative;
+}

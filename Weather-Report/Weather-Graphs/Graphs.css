@@ -1,0 +1,196 @@
+body{
+    border: 0;
+    margin: 0;
+    background-image: url("https://cdn.prod.website-files.com/6768f29a6d5da42209173f20/6768f29b6d5da422091773c0_light-blue-backgrounds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header{
+    background: rgba(63, 170, 232, 0.694);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    left: 550px;
+}
+
+a#a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1{
+    color: white;
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin: 0%;
+    font-family: 'Great Vibes', cursive;
+}
+
+#search-tab {
+    display: inline-block;
+    margin-left: 20px;
+    width: 300px;
+    position: relative;
+    top: 5px;
+    right: 100px;
+}
+
+#search-box {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #308cd7;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    float: left;
+    justify-content: center;
+    align-items:center;
+}
+
+#search-button:hover {
+    background-color: #1c7bca;
+}
+
+#search-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 20;
+    width: 272px;
+    max-height: 150px;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: 120px;
+    font-family: 'Exo', sans-serif;
+}
+
+#search-options p {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#search-options p:hover {
+    background-color: #f1f1f1;
+}
+
+#search-tab:hover #search-options {
+    display: block;
+}
+
+.container {
+   width: 1200px;
+   position: relative;
+   left: 30px;
+   top: 20px;
+   border-radius: 12px;
+   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+   background: #fff;
+   font-family: 'Exo', sans-serif;
+}
+
+#divider{
+    width: 1300px;
+    background-color: #409eec;
+    margin-right: 20px;
+    height: 5px;
+    position: relative;
+    top: 50px;
+}
+
+/* Highlight style for Cities button */
+#search-button.active-btn {
+  background-color: rgba(68, 87, 238, 0.968) !important; /* force override */
+  color: white !important;
+  border: none;
+}
+.AQI{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);    
+    display: flex;
+    font-family: 'Exo', sans-serif;
+    position: relative;
+    left: 30px;
+    top: 100px;
+}
+
+#AQI{
+    color:rgb(42, 156, 208);
+}
+
+.A, .L{
+    position: relative;
+    top: 70px;
+    left: -150px;
+    width: 1px
+}
+
+.A{
+    position: relative;
+    left: -250px;
+
+}
+
+.L{
+    position: relative;
+    left: -50px !important;
+}
+
+#A-1, #City, #State, #Condition{
+    width: max-content;
+}
+
+#Condition{
+    width: 200px;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.leaflet-container {
+    background: #f8f9fa;
+}

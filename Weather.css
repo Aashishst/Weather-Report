@@ -1,0 +1,328 @@
+body{
+    border: 0;
+    margin: 0;
+    background-image: url("https://cdn.prod.website-files.com/6768f29a6d5da42209173f20/6768f29b6d5da422091773c0_light-blue-backgrounds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background: rgba(63, 170, 232, 0.694);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    left: 240px;
+}
+
+a#a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1{
+    color: white;
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin: 0%;
+    font-family: 'Great Vibes', cursive;
+}
+
+#search-tab {
+    display: inline-block;
+    margin-left: 20px;
+    width: 300px;
+    position: relative;
+    top: 5px;
+}
+
+#search-box {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #308cd7;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    float: left;
+}
+
+#search-button:hover {
+    background-color: #1c7bca;
+}
+
+#search-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 20;
+    width: 280px;
+    max-height: 150px;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: 120px;
+    font-family: 'Exo', sans-serif;
+}
+
+#search-options p {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#search-options p:hover {
+    background-color: #f1f1f1;
+}
+
+#search-tab:hover #search-options {
+    display: block;
+}
+
+#weather{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+    font-family: 'Exo', sans-serif;
+}
+
+#weather-details{
+    display: flex;
+    width: 500px;
+    font-family: 'Exo', sans-serif;
+}
+
+h2{
+    font-family: 'Exo', sans-serif;
+    color:rgb(42, 156, 208);
+}
+
+#D2{
+    position: relative;
+    left: 20px;
+}
+
+#sun-rise-set{
+    position: relative;
+    top: 100px;
+    left: 30px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+
+}
+
+#weather-details-1{
+    display: flex;
+    width: 500px;
+    font-family: 'Exo', sans-serif;
+}
+
+#D3{
+    position: relative;
+    left: 20px;
+}
+
+#d3{
+    position: relative;
+    top: 13px;
+}
+
+#D4{
+    position: relative;
+    left: 100px;
+    top: -0px;
+}
+
+#d4{
+    position: relative;
+    top: 13px;
+}
+
+#D6{
+    position: relative;
+    left: 20px;
+
+}
+
+#future-weather{
+    position: absolute;
+    top: 119px;
+    left: 650px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+}
+
+#weather-details-2{
+    display: flex;
+    width: 500px;
+    font-family: 'Exo', sans-serif;
+}
+
+
+#yesterdays-weather{
+    position: absolute;
+    top: 419px;
+    left: 650px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
+}
+
+#weather-details-3{
+    display: flex;
+    width: 500px;
+    font-family: 'Exo', sans-serif;
+}
+
+#D8{
+    position: relative;
+    left: 20px;
+    width: 250px;
+}
+
+
+#sun, #cloud, #cloudy {
+    position: absolute;  /* locks position relative to parent */
+    right: 20px;         /* stays the same distance from right edge */           
+    top: 50px;
+    transform: translateY(-50%);
+    pointer-events: none; /* prevents accidental clicks */
+    width: 70px;
+    height: 70px;
+}
+
+
+footer{
+    background: rgba(63, 170, 232, 0.694);
+    margin-top: 150px;
+    padding-bottom: 15px;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+#git{
+    display: flex;
+    position: relative;
+    left: -30px;
+}
+
+img#git{
+    position: relative;
+    top: 13px;
+    left: -55px;
+}
+#C1 {
+    position: relative;
+    left: -56px
+}
+
+#B1 {
+    position: relative;
+    left: -56px;
+}
+
+#aa, #ab{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#bg{
+    position: relative;
+    left: 3px;
+}
+
+#bg a {
+    pointer-events: auto;
+    z-index: 10;
+    position: relative;
+}
+
+#facts-menu {
+    position: fixed;
+    top: 120px;
+    right: 0;
+    width: 140px;
+    background: #09324f;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 2px 8px rgba(0,0,0,0.08);
+    z-index: 2000;
+    padding: 8px 0;
+    font-family: 'Exo', sans-serif;
+}
+#facts-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fact-keyword {
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1565c0;
+    transition: background 0.2s, color 0.2s;
+}
+.fact-keyword:hover {
+    background: #1976d2;
+    color: #fff;
+}
+#fact-dropdown {
+    position: fixed;
+    right: 150px;
+    min-width: 260px;
+    background: #fff;
+    border: 1px solid #1976d2;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    padding: 18px;
+    color: #222;
+    font-size: 16px;
+    display: none;
+    z-index: 200;
+}
+#fact-dropdown.visible {
+    display: block;
+}
