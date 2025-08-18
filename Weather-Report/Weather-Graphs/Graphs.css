@@ -178,10 +178,11 @@ h1{
 }
 
 #map {
-    width: 100%;
+    width: 1000px;
     height: 200px;
     position: absolute;
     left: 700px;
+    top: 400px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);
 }
@@ -193,4 +194,18 @@ h1{
 
 .leaflet-container {
     background: #f8f9fa;
+}
+
+.P{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(146, 212, 229, 0.973);    
+    display: flex;
+    font-family: 'Exo', sans-serif;
+    position: relative;
+    left: 700px;
+    top: 100px;
 }
